@@ -15,7 +15,7 @@ function App() {
   return (
     <Root>
       <Head>
-        <title>Global warming information and data</title>
+        <title>Effet de serre</title>
         <meta
           name="description"
           content="Up-to-date global climate information"

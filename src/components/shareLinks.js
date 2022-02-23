@@ -17,9 +17,9 @@ import {
 import { red } from '../utils/colors';
 
 const ShareButtons = () => {
-  const shareUrl = `https://isearthstillwarming.com`;
-  const title = `IsEarthStillWarming.com`;
-  const fullTitle = `IsEarthStillWarming.com: Global warming information and data`;
+  const shareUrl = `https://effetdeserre.netlify.app`;
+  const title = `Effet De Serre`;
+  const fullTitle = `Effet de serre : informations et données`;
 
   const share = () => window.navigator.share({
     url: shareUrl,
