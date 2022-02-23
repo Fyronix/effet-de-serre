@@ -1,6 +1,7 @@
 {
   "name": "isearthstillwarming.com",
   "private": true,
+  "homepage": "https://zyrodev.github.io/effet-de-serre/",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -20,6 +21,7 @@
     "export": "react-static export",
     "serve": "serve dist -p 3000",
     "format": "eslint --fix ./src",
+    "deploy": "gh-pages -d dist",
     "cyTest": "cypress run",
     "buildTestServer": "serve dist -p 3939",
     "test": "server-test buildTestServer 3939 cyTest"
@@ -30,6 +32,7 @@
     "@sentry/browser": "^5.0.0",
     "axios": "^0.21.1",
     "chart.js": "^2.7.3",
+    "gh-pages": "^3.2.3",
     "modern-normalize": "^0.7.0",
     "prop-types": "^15.6.2",
     "react": "^16.10.2",

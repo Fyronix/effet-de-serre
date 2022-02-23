@@ -97,14 +97,12 @@ class Home extends Component {
             <h2>Qu'est ce que le réchauffement climatique?</h2>
             <p>
             Le réchauffement climatique est la tendance de la Terre
-              {`'`}
               à augmenter de température à un rythme sans précédent à partir du milieu
                20ième siècle.
               <Cite name="nasa" />
             </p>
             <p>
             Bien que des changements graduels sur Terre
-              {`'`}
               et sur climat se sont produits dans le passé, cette dernière tendance a été
                principalement causée par la libération de dioxyde de carbone (
               <CO2 />
@@ -124,7 +122,6 @@ class Home extends Component {
             </p>
             <p>
             Depuis le milieu des années 1950, la température de la Terre 
-              {`'`}
               a une nette tendance positive (voir fig. 1).
             </p>
             <div css={figureWrapperStyle}>
@@ -176,16 +173,13 @@ class Home extends Component {
                température globale pré-industrielle. À partir de
               {` `}
               <span id="latestTempYear">{latestTempYear}</span>
-              , Earth
-              {`'`}
-              s La température de la Terre est d'environ
+              , La température de la Terre est d'environ
               {` `}
               <span id="latestTempValue">{latestTempValue}</span>
               °C au-dessus des niveaux préindustriels.
               <Cite name="tempData" />
               {` `}
               Si la température de la planète
-              {`'`}
               continue d'augmenter, on peut s'attendre à beaucoup
                impacts environnementaux et sociétaux dont les plus significatifs
                nous expliquerons dans cet article.
@@ -286,13 +280,14 @@ class Home extends Component {
               </strong>
             </div>
             <p>
-            Puisque
+            Puisque 
                {` `}
+               l'abondance de  {` `}
                <CO2 />
                {` `}
-               l'abondance dans l'atmosphère est directement liée à la Terre
+                dans l'atmosphère est directement liée à l'augmentation'
                {`'`}
-               s augmentation de la température, limitant le carbone atmosphérique a été
+               de la température de la Terre, limitant le carbone atmosphérique a été
                identifiée comme vitale pour atténuer le réchauffement climatique. En tant que membre de
                Convention sur le climat du Protocole de Kyoto, les scientifiques ont 450ppm comme
                bonne limite supérieure pour la concentration de carbone afin de maintenir
