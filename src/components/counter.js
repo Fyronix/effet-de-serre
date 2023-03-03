@@ -1,26 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { css } from '@emotion/core';
+import { PropTypes } from 'prop-types';
 import ContentWrapper from './contentWrapper';
-import CO2 from './co2';
+import Atmosphere from './atmosphere';
 
 const Counter = ({
   currentCo2, currentTemp, currentSlr, currentIceMelt,
 }) => (
-  <ContentWrapper
-    style={`
-      padding: 0;
-      margin-top: .5rem;
-      text-align: center;
-    `}
-  >
+  <ContentWrapper style={{ padding: 0, marginTop: '.5rem', textAlign: 'center' }}>
     <div
       css={css`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         > div {
-          flex-grow: 1
+          flex-grow: 1;
           min-height: 80px;
           padding: 2rem 1.5rem 0;
           > div {
@@ -37,37 +31,30 @@ const Counter = ({
     >
       <div>
         <div>
-          Atmosphère
-          {` `}
-          <CO2 />
+          Atmosphere
+          {' '}
+          <Atmosphere />
         </div>
         <strong id="currentCo2Counter">
-          {currentCo2}
-          ppm
+          {`${currentCo2} ppm`}
         </strong>
       </div>
       <div>
         <div>Anomalie de température globale</div>
         <strong id="currentTempCounter">
-          +
-          {currentTemp}
-          °C
+          {`+${currentTemp} °C`}
         </strong>
       </div>
       <div>
         <div>Élévation mondiale du niveau de la mer</div>
         <strong id="currentSlrCounter">
-          +
-          {currentSlr}
-          mm/year
+          {`+${currentSlr} mm/year`}
         </strong>
       </div>
       <div>
         <div>Minimum de glace de mer arctique</div>
         <strong id="currentIceMeltCounter">
-          {currentIceMelt}
-          M km
-          <sup>2</sup>
+          {`${currentIceMelt} M km\u00B2`}
         </strong>
       </div>
     </div>
