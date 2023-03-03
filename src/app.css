@@ -1,19 +1,16 @@
-* {
-  scroll-behavior: smooth;
+:root {
+  --main-color: #108db8;
 }
 
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-    Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
+  font: 300 16px/1.5 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: #108db8;
+  color: var(--main-color);
   font-weight: bold;
 }
 
@@ -23,7 +20,7 @@ img {
 
 nav {
   width: 100%;
-  background: #108db8;
+  background: var(--main-color);
 }
 
 nav a {
@@ -34,4 +31,18 @@ nav a {
 
 .content {
   padding: 1rem;
+}
+
+/* Vendor prefixes */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
 }
